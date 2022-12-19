@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+</head>
+<body>
+  <h1>Tesla M3</h1>
+    <style>
+        .wrapper {
+          display: flex;
+          justify-content: center;
+        }
+      
+        .cars {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .cars h1 {
+          
+          width: 100%;
+        }
+      
+        .cars button {
+
+          margin-top: 20px;
+        }
+        
+/
+        img {
+          height: 500px;
+        }
+
+        h1 {
+          text-align: center;
+        }
+
+      </style>
+      
+      <div class="wrapper">
+        <div class="cars">
+          <h1><img src="m3white.jpg" id="car-image"></h1>
+          <button onclick="changeImage('red')">Red</button>
+          <button onclick="changeImage('blue')">Blue</button>
+          <button onclick="changeImage('white')">White</button>
+        </div>
+      </div>
+      
+      <script>
+        function changeImage(color) {
+          
+          document.getElementById('car-image').src = `m3${color}.jpg`;
+        }
+      </script>
+      
+</body>
+</html>
